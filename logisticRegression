@@ -1,0 +1,8 @@
+Logistic regression
+- for binary classification problems (with two class values)
+- named for the function used at the core of the method - logistic function: (1 / (1 + e^-value))
+  - S-shaped curve that can take any real-valued number and map it into a value between 0 and 1 but ever exactly at those limits
+- input values, x, are combined linearly using weights/ coefficient values to predict ann output value, y
+- key difference from linear regression is that the output value being modeled is binary values rather than a numeric value
+- example logistic regression equation: y = e^(b0 + b1*x) / (1 + e^(b0 + b1*x))
+- each column in the input data has an associated b coefficient that must be learned from the training data
