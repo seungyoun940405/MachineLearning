@@ -6,3 +6,26 @@ Logistic regression
 - key difference from linear regression is that the output value being modeled is binary values rather than a numeric value
 - example logistic regression equation: y = e^(b0 + b1*x) / (1 + e^(b0 + b1*x))
 - each column in the input data has an associated b coefficient that must be learned from the training data
+- logistic regression models the probability of the default class
+  - P(X) = P(Y=1|X)
+  - We are modeling the probability that an input (X) belongs to the default class (Y=1)
+  - probability prediction must be transformed ito binary values to make a probability prediction
+- logistic regression is a linear method, but the predictions are transformed using the logistic function
+- The model is still a linear combination of inputs but is related to the log-odds of the default class 
+  - P(Y=1|X) = 1 / (1 + e^-value) transformed -> ln(p(X) / 1 – p(X)) = b0 + b1 * X
+  - p(X) / 1 – p(X) is odds of the default class (odds are ratio of probability of event divided by probability of not the event)
+  - ln(odds) = b0 + b1 * X -> odds = e^(b0 + b1 * X)
+- The coefficients of the logistic regression algorithm must be estimated from the training data using maximum-likelihood estimation
+  - The best coefficients would result in a model that would predict a value very close to 1 for the default class and a value very close to 0 for the other class
+  - maximum-likelihood seeks values for the coefficients that minimize the error in the probabilities predicted by the model to those in data
+- Preparing data for logistic regression
+  - binary output variable
+  - remove noise
+    - remove outliers and misclassified instances from training data
+    - make sure there is no error in the output variable
+  - Gaussian distribution
+    - data transformation on input variables that better expose linear relationship between the input and output
+    - logistic regression is a linear algorithm (with a non-linear transformation on output) and thus assumes a linear relationship between the input and output
+  - remove correlated inputs
+    - the model can overfit if you have multiple highly correlated inputs
+    - calculate pairwise correlations between inputs and remove highly correlated inputs
