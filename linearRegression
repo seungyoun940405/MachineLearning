@@ -15,3 +15,15 @@ Polynomial Regression
 - ex: Yhat = a + b1X^2 + b2X^2 + b3X^3 (cubic - 3rd order)
 - analytical expression for Multivariate Polynomial function gets complicated
   - ex: second-order polynomial with two variables : 𝑌ℎ𝑎𝑡=𝑎+𝑏1𝑋1+𝑏2𝑋2+𝑏3𝑋1𝑋2+𝑏4𝑋21+𝑏5𝑋22
+- data pipelines simplify the steps of processing data
+  - create pipeline by creating list of tuples including name of model/estimator and corresponding constructor
+  - input list as argument to pipeline constructor
+  - normalize data, perform transform, annd fit the model simultaneously
+  - as well as predict simultaneously
+  
+Decision Making: Determining a Good Model Fit
+- what is a good R-squared value?
+  - model with higher R-squared value is a better fit for the data
+- what is a good MSE?
+  - model with smallest MSE is a better fit for the data
+  
