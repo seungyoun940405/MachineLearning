@@ -13,3 +13,5 @@ Polynomial Regression
 - particular case of the general linear regression model or multiple linear regression models
 - non-linear relationships by setting higher-order terms of the predictor variables
 - ex: Yhat = a + b1X^2 + b2X^2 + b3X^3 (cubic - 3rd order)
+- analytical expression for Multivariate Polynomial function gets complicated
+  - ex: second-order polynomial with two variables : 𝑌ℎ𝑎𝑡=𝑎+𝑏1𝑋1+𝑏2𝑋2+𝑏3𝑋1𝑋2+𝑏4𝑋21+𝑏5𝑋22
