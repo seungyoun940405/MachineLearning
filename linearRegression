@@ -1,0 +1,15 @@
+Simple Linear Regression
+- method to help us understand the relationship between two variables - X, Y
+- the result of linear regression is a linear function that predicts the dependent variable as a function of the independent variable
+- Yhat = a + bX
+  - a = inercept of regression line 0
+  - b = slope of regression line
+
+Multiple Linear Regression
+- used to explain relationship between one conntinuous dependent variable and two or more independent variables
+- Yhat = a + b1X1 + b2X2 + b3X3 + ...
+
+Polynomial Regression
+- particular case of the general linear regression model or multiple linear regression models
+- non-linear relationships by setting higher-order terms of the predictor variables
+- ex: Yhat = a + b1X^2 + b2X^2 + b3X^3 (cubic - 3rd order)
