@@ -1,0 +1,19 @@
+- gradient boosted decision trees designed for speed and performance (extreme gradient boosting)
+- goal is to push the extreme of computation limits of machines to provide scalable, portable, and accurate large scale tree boosting
+- boosting
+  - ensemble method that seeks to create strong classifier (model) based on weak classifiers
+  - by adding models on top of each other iteratively, the errors of the previous model are corrected by the next predictor
+  - 
+- gradient boosting
+  - comprises ensemble method that sequentially adds predictors and corrects previous models
+  - instead of assigning different weights to classifiers after every iteration, fits the new model to new residuals of previous prediction and then minimizes loss when adding latest prediction
+  - updating model using gradient descen
+  - supported for regression and classification problems
+- XGBoost implements algorithm for decision tree boosting with additional custom regularization term
+
+
+RANDOM FOREST
+- ensemble learning method for classification and regression mostly
+- bootstrapping technique for training and testing
+- decision tree for prediction purpose
+- 
